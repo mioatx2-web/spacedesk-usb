@@ -1,6 +1,7 @@
 # Changelog – spacedesk-usb
 
 ## 2026-11-24 (v0.1.1)
+- Release: https://github.com/mioatx2-web/spacedesk-usb/releases/tag/v0.1.1
 - Corregido: sin `Serial` configurado, el script tomaba el primer dispositivo ADB, aunque fuera un celular. Ahora solo usa un dispositivo con spacedesk instalado; los demás se ignoran (y se anota en el log).
 - README (es/en): desactivar "USB Cable Android" en la consola de spacedesk (bloquea la transferencia de archivos de cualquier Android conectado) y su entrada en Problemas comunes.
 - Corregido: los commits aparecían en GitHub como `pensionlegal-sistemas` por el correo global de Git. Se reescribió el historial con el correo noreply de mioatx2-web y se forzó la subida (también la etiqueta v0.1.0).
