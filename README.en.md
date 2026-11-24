@@ -62,7 +62,16 @@ Copy `config.example.psd1` to `config.psd1` and change only what you need. Every
 ## Tested on
 - Samsung Galaxy Tab 3 10.1 (GT-P5210), LineageOS 14.1 (Android 7.1), spacedesk Viewer `ph.spacedesk.beta`, Windows 11, `Settings` and `Root` modes.
 
-Other devices are **untested**. If you try it on another one, please open an issue with the model, Android version and result.
+Other devices are **untested**. It should work on Android 5 to 9. Android 10 or newer is not tested yet.
+
+## Report whether it worked or failed
+This is a **beta** release: your tests help it work on more devices. Open an [issue](https://github.com/mioatx2-web/spacedesk-usb/issues) with:
+1. Brand and model of your tablet or phone.
+2. Android version.
+3. Whether it worked, or at which step it failed.
+4. **If it failed, the log file:** `%LOCALAPPDATA%\spacedesk-usb\spacedesk-usb.log`. Paste its contents or attach it; it shows the step where it got stuck.
+
+These reports drive the fixes in the next versions.
 
 ## Troubleshooting
 - **Nothing happens when plugging in:** check the log. If it says `adb.exe` wasn't found, set `AdbPath`. If `adb devices` shows `unauthorized`, accept the prompt on the tablet.

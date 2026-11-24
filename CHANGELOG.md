@@ -1,6 +1,7 @@
 # Changelog – spacedesk-usb
 
 ## 2026-11-24 (después de v0.1.0)
+- README (es/en): sección "Reportar si funcionó o falló" (modelo, versión de Android, resultado y el log si falló) y compatibilidad esperada (Android 5 a 9).
 - Se decide darla a conocer ya en Facebook como beta, pidiendo pruebas en equipos más nuevos.
 - README (es/en): nota de que spacedesk es gratis para uso personal y que para uso comercial hay que revisar su licencia; el proyecto no incluye spacedesk.
 
