@@ -11,6 +11,7 @@
 
 ## Qué falta
 - [x] Publicado en GitHub, cuenta mioatx2-web, repo público, Release v0.1.0 beta (2026-11-24).
+- [x] Release v0.1.1 (2026-11-24): ignora dispositivos sin spacedesk y README con "USB Cable Android" apagado.
 - [ ] Probar bloqueo y desbloqueo de la PC con esta versión (en HomeLab ya funciona; la lógica es la misma).
 - [ ] Probar el toque de respaldo (spacedesk sin conexión automática).
 - [ ] Probar en otra tablet o teléfono, idealmente Android 10 o más nuevo (interfaz `ncm`, Ajustes distintos).
