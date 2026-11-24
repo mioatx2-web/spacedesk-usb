@@ -24,5 +24,10 @@ Para cambiar una decisión se edita esta misma entrada y se anota la fecha.
 - **Cuenta:** mioatx2-web (la propia, no la de Pensión Legal). El remoto lleva el usuario en la URL (`https://mioatx2-web@github.com/...`) porque Git tiene guardada también la cuenta `pensionlegal-sistemas`; así el gestor de credenciales usa la correcta solo para este repo.
 - **Descarga:** el ZIP automático de cada Release, sin las notas internas (`.gitattributes` con `export-ignore`). Versión 0.1.0 con "(beta)" en el título y las notas, pero **no** marcada como Pre-release: GitHub excluye los pre-release de `releases/latest`, que es el enlace del README.
 
+## Licencia de spacedesk (2026-11-24)
+- El proyecto no modifica ni redistribuye spacedesk: solo lo abre y lo toca por ADB, como lo haría una persona. No se incluyen archivos de spacedesk en el repo.
+- spacedesk es gratis para uso personal y pide licencia de pago para uso comercial: el README lo avisa y enlaza a https://www.spacedesk.net/licensing/.
+- No se usa el logotipo de spacedesk. El nombre `spacedesk-usb` se mantiene (uso descriptivo, con aviso de no afiliación); si spacedesk lo pidiera, se renombra.
+
 ## Notas de desarrollo
 - **Log aislado en el entorno de Claude (2026-11-24):** el entorno donde corre Claude ve una copia aislada de `%LOCALAPPDATA%\spacedesk-usb`; lo que escribe la tarea programada no aparece ahí. Se perdió tiempo creyendo que la tarea no funcionaba. Para leer el log real, usar una tarea programada que lo copie a la carpeta del proyecto.

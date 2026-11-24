@@ -19,6 +19,7 @@ Usa una tablet Android como monitor extra de Windows con [spacedesk](https://www
 - **ADB** (Android SDK Platform-Tools), oficial de Google: <https://developer.android.com/tools/releases/platform-tools>
 - En la tablet: **Opciones de desarrollador → Depuración USB** activada, y esta PC autorizada ("Permitir siempre").
 - **No necesita root** ni permisos de administrador en Windows.
+- **spacedesk es gratis para uso personal; para uso comercial revisa [su licencia](https://www.spacedesk.net/licensing/).** Este proyecto no incluye spacedesk: cada quien lo instala desde su página o tienda oficial.
 
 ## Instalación
 1. Descarga la última versión desde [**Releases**](https://github.com/mioatx2-web/spacedesk-usb/releases/latest) (**Source code (zip)**) y descomprímela en una carpeta fija, por ejemplo `C:\spacedesk-usb`.
@@ -70,4 +71,4 @@ Otros equipos **no están probados**. Si lo pruebas en otro, abre un issue con e
 - **Se ve lento:** baja la calidad o los FPS en los ajustes de spacedesk Viewer.
 
 ## Licencia
-[MIT](LICENSE). spacedesk es un producto de datronicsoft; este proyecto no está afiliado a ellos.
+[MIT](LICENSE). spacedesk es un producto de datronicsoft; este proyecto no está afiliado a ellos. spacedesk es gratis para uso personal; para uso comercial revisa [su licencia](https://www.spacedesk.net/licensing/).

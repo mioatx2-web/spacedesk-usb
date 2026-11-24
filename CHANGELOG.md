@@ -1,5 +1,8 @@
 # Changelog – spacedesk-usb
 
+## 2026-11-24 (después de v0.1.0)
+- README (es/en): nota de que spacedesk es gratis para uso personal y que para uso comercial hay que revisar su licencia; el proyecto no incluye spacedesk.
+
 ## 2026-11-24 (v0.1.0)
 - Publicado en GitHub: https://github.com/mioatx2-web/spacedesk-usb (público). Release v0.1.0 (beta): https://github.com/mioatx2-web/spacedesk-usb/releases/tag/v0.1.0
 - `.gitattributes`: el ZIP de descarga deja fuera `CLAUDE.md` y `docs/`. El README indica descargar desde Releases.

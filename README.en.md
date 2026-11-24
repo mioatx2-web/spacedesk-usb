@@ -19,6 +19,7 @@ Use an Android tablet as an extra Windows monitor with [spacedesk](https://www.s
 - **ADB** (Android SDK Platform-Tools), official from Google: <https://developer.android.com/tools/releases/platform-tools>
 - On the tablet: **Developer options → USB debugging** turned on, and this PC authorized ("Always allow").
 - **No root** and no Windows admin rights needed.
+- **spacedesk is free for personal use; for commercial use, check [its license](https://www.spacedesk.net/licensing/).** This project doesn't include spacedesk: everyone installs it from its official website or store.
 
 ## Install
 1. Download the latest version from [**Releases**](https://github.com/mioatx2-web/spacedesk-usb/releases/latest) (**Source code (zip)**) and extract it to a permanent folder, e.g. `C:\spacedesk-usb`.
@@ -70,4 +71,4 @@ Other devices are **untested**. If you try it on another one, please open an iss
 - **It feels slow:** lower the quality or FPS in spacedesk Viewer's settings.
 
 ## License
-[MIT](LICENSE). spacedesk is a product of datronicsoft; this project is not affiliated with them.
+[MIT](LICENSE). spacedesk is a product of datronicsoft; this project is not affiliated with them. spacedesk is free for personal use; for commercial use, check [its license](https://www.spacedesk.net/licensing/).
