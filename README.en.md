@@ -26,7 +26,7 @@ Use an Android tablet as an extra Windows monitor with [spacedesk](https://www.s
 2. Extract Platform-Tools inside that folder so that you have `C:\spacedesk-usb\platform-tools\adb.exe`. If you already have ADB somewhere else, see [Configuration](#configuration).
 3. Plug in the tablet and accept the USB debugging prompt ("Always allow from this computer").
 4. In **spacedesk Viewer** on the tablet, turn on automatic connection to your PC if your version has it. If it doesn't, the script taps the connection in the list.
-5. In the Windows **spacedesk console**, **turn off "USB Cable Android"** (Communication Interfaces). This script doesn't use it: it connects through USB tethering (network). If you leave it on, spacedesk takes over any Android you plug in by USB and you can't **transfer photos or files** from a phone.
+5. In the Windows **spacedesk console**, **turn off "USB Cable Android"** (Communication Interfaces). This script doesn't use it: it connects through USB tethering (network). If you leave it on, spacedesk takes over any Android you plug in by USB and you can't **transfer photos or files** from a phone. Check that the bottom bar says **"USB Android: OFF"**; if spacedesk was restarting ("switching"), change it again.
 6. Recommended: on the tablet, **Settings → Security → Screen lock → None**. That way the tablet doesn't stay on its lock screen when you unlock the PC.
 7. Open PowerShell in the folder and run:
    ```powershell
@@ -79,7 +79,7 @@ These reports drive the fixes in the next versions.
 - **"Couldn't find the USB tethering option":** add the exact text of that option to `TetherLabels`, or use `TetherMode = 'Manual'`.
 - **The tablet stays on its lock screen when the PC is unlocked:** set the tablet's screen lock to "None".
 - **It feels slow:** lower the quality or FPS in spacedesk Viewer's settings.
-- **I plug in my phone to transfer photos and spacedesk tries to connect to it / I can't choose "File transfer":** that's the **"USB Cable Android"** option in the spacedesk console; turn it off (see Install, step 5). The script doesn't touch devices without spacedesk installed.
+- **I plug in my phone to transfer photos and spacedesk tries to connect to it / I can't choose "File transfer":** that's the **"USB Cable Android"** option in the spacedesk console; turn it off (see Install, step 5), then unplug and replug the phone; if it persists, restart it. The script doesn't touch devices without spacedesk installed.
 
 ## License
 [MIT](LICENSE). spacedesk is a product of datronicsoft; this project is not affiliated with them. spacedesk is free for personal use; for commercial use, check [its license](https://www.spacedesk.net/licensing/).

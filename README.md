@@ -26,7 +26,7 @@ Usa una tablet Android como monitor extra de Windows con [spacedesk](https://www
 2. Descomprime Platform-Tools dentro de esa carpeta, de modo que quede `C:\spacedesk-usb\platform-tools\adb.exe`. Si ya tienes ADB en otro lugar, ver [Configuración](#configuración).
 3. Conecta la tablet por USB y acepta el aviso de depuración USB ("Permitir siempre desde esta computadora").
 4. En **spacedesk Viewer** de la tablet, activa la conexión automática a tu PC si tu versión lo tiene. Si no, el script toca la conexión en la lista.
-5. En la **consola de spacedesk** de Windows, **desactiva "USB Cable Android"** (Communication Interfaces). Este script no la usa: se conecta por anclaje USB (red). Si la dejas activada, spacedesk toma el control de cualquier Android que conectes por USB y no te deja **pasar fotos o archivos** desde un celular.
+5. En la **consola de spacedesk** de Windows, **desactiva "USB Cable Android"** (Communication Interfaces). Este script no la usa: se conecta por anclaje USB (red). Si la dejas activada, spacedesk toma el control de cualquier Android que conectes por USB y no te deja **pasar fotos o archivos** desde un celular. Revisa que abajo diga **"USB Android: OFF"**; si spacedesk estaba reiniciándose ("switching"), repite el cambio.
 6. Recomendado: en la tablet, **Ajustes → Seguridad → Bloqueo de pantalla → Ninguno**. Así, al desbloquear la PC, la tablet no se queda en su pantalla de bloqueo.
 7. Abre PowerShell en la carpeta y ejecuta:
    ```powershell
@@ -79,7 +79,7 @@ Con esos reportes se hacen los ajustes para las siguientes versiones.
 - **"No encontré la opción de anclaje USB":** agrega el texto exacto de esa opción a `TetherLabels`, o usa `TetherMode = 'Manual'`.
 - **La tablet se queda en su pantalla de bloqueo al desbloquear la PC:** pon el bloqueo de pantalla de la tablet en "Ninguno".
 - **Se ve lento:** baja la calidad o los FPS en los ajustes de spacedesk Viewer.
-- **Conecto mi celular para pasar fotos y spacedesk intenta conectarse con él / no me deja elegir "Transferir archivos":** es la opción **"USB Cable Android"** de la consola de spacedesk; desactívala (ver Instalación, paso 5). El script no toca dispositivos que no tengan spacedesk instalado.
+- **Conecto mi celular para pasar fotos y spacedesk intenta conectarse con él / no me deja elegir "Transferir archivos":** es la opción **"USB Cable Android"** de la consola de spacedesk; desactívala (ver Instalación, paso 5) y desconecta y vuelve a conectar el celular; si sigue igual, reinícialo. El script no toca dispositivos que no tengan spacedesk instalado.
 
 ## Licencia
 [MIT](LICENSE). spacedesk es un producto de datronicsoft; este proyecto no está afiliado a ellos. spacedesk es gratis para uso personal; para uso comercial revisa [su licencia](https://www.spacedesk.net/licensing/).
