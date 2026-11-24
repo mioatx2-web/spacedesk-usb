@@ -20,5 +20,9 @@ Para cambiar una decisión se edita esta misma entrada y se anota la fecha.
 - **Tarea programada con `conhost --headless`** (Windows 10 21H2+ / 11) para que no aparezca ninguna ventana; en Windows más viejo usa `powershell.exe -WindowStyle Hidden`.
 - **Reinicio del servidor ADB** solo si Windows ve una interfaz ADB y `adb devices` no lista nada. Así un teléfono "unauthorized" conectado no provoca reinicios en bucle.
 
+## Publicación (2026-11-24)
+- **Cuenta:** mioatx2-web (la propia, no la de Pensión Legal). El remoto lleva el usuario en la URL (`https://mioatx2-web@github.com/...`) porque Git tiene guardada también la cuenta `pensionlegal-sistemas`; así el gestor de credenciales usa la correcta solo para este repo.
+- **Descarga:** el ZIP automático de cada Release, sin las notas internas (`.gitattributes` con `export-ignore`). Versión 0.1.0 marcada como beta (pre-release) hasta probar en otra tablet.
+
 ## Notas de desarrollo
 - **Log aislado en el entorno de Claude (2026-11-24):** el entorno donde corre Claude ve una copia aislada de `%LOCALAPPDATA%\spacedesk-usb`; lo que escribe la tarea programada no aparece ahí. Se perdió tiempo creyendo que la tarea no funcionaba. Para leer el log real, usar una tarea programada que lo copie a la carpeta del proyecto.

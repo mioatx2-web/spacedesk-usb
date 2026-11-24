@@ -21,7 +21,7 @@ Usa una tablet Android como monitor extra de Windows con [spacedesk](https://www
 - **No necesita root** ni permisos de administrador en Windows.
 
 ## Instalación
-1. Descarga este repositorio (botón **Code → Download ZIP**) y descomprímelo en una carpeta fija, por ejemplo `C:\spacedesk-usb`.
+1. Descarga la última versión desde [**Releases**](https://github.com/mioatx2-web/spacedesk-usb/releases/latest) (**Source code (zip)**) y descomprímela en una carpeta fija, por ejemplo `C:\spacedesk-usb`.
 2. Descomprime Platform-Tools dentro de esa carpeta, de modo que quede `C:\spacedesk-usb\platform-tools\adb.exe`. Si ya tienes ADB en otro lugar, ver [Configuración](#configuración).
 3. Conecta la tablet por USB y acepta el aviso de depuración USB ("Permitir siempre desde esta computadora").
 4. En **spacedesk Viewer** de la tablet, activa la conexión automática a tu PC si tu versión lo tiene. Si no, el script toca la conexión en la lista.

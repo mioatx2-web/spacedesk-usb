@@ -1,0 +1,6 @@
+# Fuera del ZIP de descarga (Releases / Download ZIP): notas de trabajo internas.
+# Excluded from the download ZIP: internal working notes.
+CLAUDE.md export-ignore
+docs/ export-ignore
+.gitignore export-ignore
+.gitattributes export-ignore

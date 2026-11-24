@@ -1,5 +1,9 @@
 # Changelog – spacedesk-usb
 
+## 2026-11-24 (v0.1.0)
+- Publicado en GitHub: https://github.com/mioatx2-web/spacedesk-usb (público). Release v0.1.0 marcado como beta.
+- `.gitattributes`: el ZIP de descarga deja fuera `CLAUDE.md` y `docs/`. El README indica descargar desde Releases.
+
 ## 2026-11-24
 - Primera versión, a partir del script de HomeLab:
   - Autodetección de ADB, de la tablet y del paquete de spacedesk.
