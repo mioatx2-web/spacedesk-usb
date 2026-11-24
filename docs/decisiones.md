@@ -22,6 +22,7 @@ Para cambiar una decisión se edita esta misma entrada y se anota la fecha.
 
 ## Publicación (2026-11-24)
 - **Cuenta:** mioatx2-web (la propia, no la de Pensión Legal). El remoto lleva el usuario en la URL (`https://mioatx2-web@github.com/...`) porque Git tiene guardada también la cuenta `pensionlegal-sistemas`; así el gestor de credenciales usa la correcta solo para este repo.
+- **Correo de los commits (2026-11-24):** el `user.email` global de Git es el de Pensión Legal y GitHub atribuye los commits por correo, así que aparecían como `pensionlegal-sistemas` (y el correo de trabajo quedaba público). Este repo tiene en su `.git/config` el correo privado de GitHub de la cuenta propia: `315960292+mioatx2-web@users.noreply.github.com`. Se reescribieron los 7 commits con ese correo y se forzó la subida de `main` y de `v0.1.0`. No se cambió la configuración global.
 - **Descarga:** el ZIP automático de cada Release, sin las notas internas (`.gitattributes` con `export-ignore`). Versión 0.1.0 con "(beta)" en el título y las notas, pero **no** marcada como Pre-release: GitHub excluye los pre-release de `releases/latest`, que es el enlace del README.
 
 ## Licencia de spacedesk (2026-11-24)
