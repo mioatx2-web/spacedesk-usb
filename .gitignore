@@ -1,0 +1,5 @@
+# Configuración local de cada persona / local config
+config.psd1
+# ADB descargado junto al script / ADB next to the script
+platform-tools/
+*.log
