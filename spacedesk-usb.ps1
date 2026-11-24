@@ -66,10 +66,19 @@ function Get-Devices {
     @(& $Adb devices 2>$null | Where-Object { $_ -match '^(\S+)\s+device$' } | ForEach-Object { ($_ -split '\s+')[0] })
 }
 
+$script:Ignored = @{}   # dispositivos sin spacedesk ya revisados (p. ej. un celular para pasar fotos)
+
 function Test-Present {
     if ($Serial) { return ((Get-Devices) -contains $Serial) }
-    $d = @(Get-Devices)
-    if ($d.Count -gt 0) { $script:Serial = $d[0]; return $true }
+    # Sin Serial configurado: usar solo un dispositivo que tenga spacedesk instalado.
+    # Los demás (un celular conectado para pasar fotos, etc.) no se tocan.
+    foreach ($d in @(Get-Devices)) {
+        if ($script:Ignored.ContainsKey($d)) { continue }
+        $pk = (& $Adb -s $d shell 'pm list packages spacedesk' 2>$null) -join ''
+        if ($pk -match 'package:') { $script:Serial = $d; return $true }
+        $script:Ignored[$d] = $true
+        Write-Log "Dispositivo $d sin spacedesk: se ignora."
+    }
     return $false
 }
 
@@ -314,6 +323,6 @@ while ($true) {
     }
     Write-Log 'Tablet desconectada.'
     $script:TabletIp = $null
-    if (-not $Config.Serial) { $Serial = '' }
+    if (-not $Config.Serial) { $Serial = ''; $script:Ignored = @{} }
     Start-Sleep 2
 }

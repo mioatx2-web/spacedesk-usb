@@ -6,8 +6,9 @@
     # Path to adb.exe. Empty = platform-tools\adb.exe next to the script, or adb.exe on PATH.
     AdbPath = ''
 
-    # Número de serie de la tablet (adb devices). Vacío = el primer dispositivo conectado.
-    # Tablet serial (adb devices). Empty = first connected device.
+    # Número de serie de la tablet (adb devices). Vacío = el primer dispositivo con spacedesk instalado
+    # (los demás, como un celular conectado para pasar fotos, se ignoran).
+    # Tablet serial (adb devices). Empty = first device with spacedesk installed (others are ignored).
     Serial = ''
 
     # Paquete de spacedesk. Vacío = se detecta solo (ph.spacedesk.beta, etc.).

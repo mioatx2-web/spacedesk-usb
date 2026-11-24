@@ -18,6 +18,8 @@ Para cambiar una decisión se edita esta misma entrada y se anota la fecha.
 - **Al desbloquear se reinicia spacedesk siempre:** la sesión que sobrevive al apagado de pantalla queda conectada pero lenta (medido en HomeLab: 0.1–0.2 MB/s contra 4–7 MB/s).
 - **Bloqueo de la PC:** se detecta por el proceso `LogonUI.exe`.
 - **Tarea programada con `conhost --headless`** (Windows 10 21H2+ / 11) para que no aparezca ninguna ventana; en Windows más viejo usa `powershell.exe -WindowStyle Hidden`.
+- **Qué dispositivo usar (2026-11-24):** sin `Serial`, solo uno que tenga spacedesk instalado (`pm list packages spacedesk`). Motivo: un celular con depuración USB conectado para pasar fotos podía ser tomado por la tablet.
+- **"USB Cable Android" de spacedesk apagado (2026-11-24):** el script se conecta por anclaje USB (red), no por esa función. Encendida, spacedesk toma cualquier Android conectado por USB (modo accesorio) y bloquea la transferencia de archivos; pasó con un Galaxy S22 Ultra del usuario. El README pide desactivarla.
 - **Reinicio del servidor ADB** solo si Windows ve una interfaz ADB y `adb devices` no lista nada. Así un teléfono "unauthorized" conectado no provoca reinicios en bucle.
 
 ## Publicación (2026-11-24)
